@@ -94,12 +94,12 @@ function App() {
         </div>
         <div className="flex flex-col items-center justify-center bg-gradient-to-b from-myblack via-black/20 to-myblack p-20 border-b-2 border-myblack z-[-2] pb-[200px]">
           <div className="relative">
-            <div className="text-7xl text-center font-bold tracking-wide pb-14">
+            <div className="text-7xl text-center font-bold tracking-wide pb-10">
               NÁŠ MERCH
             </div>
             <div className="titlebg w-[296px] left-[165px] hidden sm:flex"></div>
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-20">
+          <div className="flex flex-wrap justify-center items-center gap-20 mt-4">
             <Merch price={299} src={"merchMug"} title={"Hrníček"} />
             <Merch price={499} src={"teamJersey"} title={"Týmový dres"} />
             <Merch price={899} src={"merchMouse"} title={"Myš Logitech G500"} />
