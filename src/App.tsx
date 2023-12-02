@@ -6,6 +6,8 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+import { Link } from "react-scroll";
+
 const assets_url =
   "https://raw.githubusercontent.com/maros-o/beyond-barriers/main/public";
 
@@ -24,16 +26,24 @@ function App() {
           </div>
         </div>
         <nav className="gap-12 items-center justify-center hidden md:flex">
-          <NavLink title="PARTNEŘI" />
-          <NavLink title="KONTAKTY" />
-          <NavLink title="O NÁS" />
-          <div className="bg-myred/60 flex items-center justify-center py-4 px-4 text-xl tr=ansition-all duration-200 font-semibold">
+          <NavLink title="PARTNEŘI" offset={-100} />
+          <NavLink title="KONTAKTY" offset={-50} />
+          <NavLink title="O NÁS" offset={-100} />
+          <Link
+            className="bg-myred/60 flex items-center justify-center py-4 px-5 text-xl tr=ansition-all duration-200 font-semibold hover:text-white"
+            spy={true}
+            smooth={true}
+            to={"MERCH"}
+          >
             MERCH
-          </div>
+          </Link>
         </nav>
       </header>
       <div className="flex flex-col flex-grow text-white">
-        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-myblack via-black/20 to-myblack p-20 border-b-2 border-myblack z-[-2]">
+        <div
+          className="flex flex-col items-center justify-center bg-gradient-to-b from-myblack via-black/20 to-myblack p-20 border-b-2 border-myblack z-[-2]"
+          id={"PARTNEŘI"}
+        >
           <div className="relative">
             <div className="text-7xl text-center font-bold tracking-wide pb-10">
               PARTNEŘI
@@ -47,14 +57,17 @@ function App() {
             <Partner src={"steelseries"} />
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center bg-myblack p-20 py-[150px] z-[-2]">
+        <div
+          className="flex flex-col items-center justify-center bg-myblack p-20 py-[150px] z-[-2]"
+          id={"KONTAKTY"}
+        >
           <div className="relative">
             <div className="text-7xl text-center font-bold tracking-wide pb-10">
               SLEDUJ NÁS
             </div>
             <div className="titlebg w-[185px] left-[300px] hidden sm:flex"></div>
           </div>
-          <div className="flex flex-wrap justify-center items-center gap-20 opacity-90 pt-6 pb-20">
+          <div className="flex flex-wrap justify-center items-center gap-20 opacity-90 pt-6 pb-20 z-10">
             <div className="soc">
               <FaInstagram size={40} />
               <div className="soc-title">@beyond_barriers</div>
@@ -77,7 +90,10 @@ function App() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-b bg-myblack border-myblack z-[-2] py-20 pb-[200px]">
+        <div
+          className="flex flex-col items-center justify-center bg-gradient-to-b bg-myblack border-myblack z-[-2] py-20 pb-[200px]"
+          id={"O NÁS"}
+        >
           <div className="relative">
             <div className="text-7xl text-center font-bold tracking-wide pb-10">
               KDO JSME
@@ -95,7 +111,10 @@ function App() {
             pro každého.
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center bg-gradient-to-b from-myblack via-black/20 to-myblack p-20 border-b-2 border-myblack z-[-2] pb-[200px]">
+        <div
+          className="flex flex-col items-center justify-center bg-gradient-to-b from-myblack via-black/20 to-myblack p-20 border-b-2 border-myblack z-[-2] pb-[200px]"
+          id={"MERCH"}
+        >
           <div className="relative">
             <div className="text-7xl text-center font-bold tracking-wide pb-10">
               NÁŠ MERCH
@@ -145,11 +164,17 @@ const Merch = ({
   );
 };
 
-const NavLink = ({ title }: { title: string }) => {
+const NavLink = ({ title, offset }: { title: string; offset?: number }) => {
   return (
-    <div className="text-xl hover:underline transition-all duration-200 font-semibold">
+    <Link
+      className="text-xl hover:underline transition-all duration-200 font-semibold"
+      spy={true}
+      smooth={true}
+      to={title}
+      offset={offset}
+    >
       {title}
-    </div>
+    </Link>
   );
 };
 
