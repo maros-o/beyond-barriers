@@ -6,13 +6,16 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+const assets_url =
+  "https://raw.githubusercontent.com/maros-o/beyond-barriers/main/public";
+
 function App() {
   return (
     <>
       <header className="flex justify-between items-center md:ps-10 md:pe-20 py-2 bg-myblack border-b-[6px] border-[#242424]/60 sticky top-0">
         <div className="flex items-center w-1/2 w-100">
           <img
-            src="../public/LogoNoTextTransparent.svg"
+            src={`${assets_url}/LogoNoTextTransparent.svg`}
             alt="logo"
             className="md:max-w-[100px] max-w-[140px] w-100 opacity-90"
           />
@@ -127,7 +130,7 @@ const Merch = ({
   return (
     <div className="flex flex-col items-center justify-center">
       <img
-        src={`../public/${src}.jpg`}
+        src={`${assets_url}/${src}.jpg`}
         alt={src}
         className="h-[240px] w-[200px] object-cover border-[6px] border-myred/60"
         loading="lazy"
@@ -154,7 +157,7 @@ const Partner = ({ src }: { src: string }) => {
   return (
     <div className="flex items-center justify-center w-[400px] h-[180px] bg-[#121212c0] px-10 opacity-90">
       <img
-        src={`../public/${src}.svg`}
+        src={`${assets_url}/${src}.svg`}
         alt={src}
         className="h-[40px] text-white"
         loading="lazy"

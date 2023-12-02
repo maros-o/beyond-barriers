@@ -10,7 +10,9 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  cursor: url("../public/foot.png") 30 20, pointer;
+  cursor: url("https://raw.githubusercontent.com/maros-o/beyond-barriers/main/public/foot.png")
+      30 20,
+    pointer;
 }
 
 img,
