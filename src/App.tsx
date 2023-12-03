@@ -5,9 +5,7 @@ import {
   FaTwitch,
   FaYoutube,
 } from "react-icons/fa";
-
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-
 import { Link } from "react-scroll";
 
 const assets_url =
@@ -60,7 +58,7 @@ const App = () => (
           <h1 className="section-title">KDO JSME</h1>
           <div className="titlebg w-[193px] left-[-20px]"></div>
         </div>
-        <p className="sm:max-w-[1200px] w-full text-lg bg-mygrey/70 px-8 py-6 tracking-wider mb-[90px]">
+        <article className="sm:max-w-[1200px] w-full text-lg bg-mygrey/70 px-8 py-6 tracking-wider mb-[90px]">
           Vítejte u <span className="font-bold">Beyond Barriers</span> –
           esportového týmu spojujícího vášeň pro videohry a jedinečné
           jednotlivce s tělesným postižením. Hledáme nové hráče do našeho týmu
@@ -73,7 +71,7 @@ const App = () => (
           klíčové pro úspěch ve světě esportu.{" "}
           <span className="font-bold">Beyond Barriers</span> - společně
           překračujeme hranice!
-        </p>
+        </article>
       </section>
       <section
         className="bg-gradient-to-b from-myblack via-black/20 to-myblack"
@@ -126,14 +124,14 @@ const App = () => (
                 Kateřina <span className="font-bold">"Katniss"</span> Novotná
               </div>
             </div>
-            <div className="px-8 py-6 tracking-wider bg-mygrey/80 flex flex-col gap-5">
-              <p className="">
+            <article className="px-8 py-6 tracking-wider bg-mygrey/80 flex flex-col gap-5">
+              <p>
                 <span className="font-bold">Katka</span>, nesmírně odvážná a
                 inspirativní mladá žena, se stala paraplegičkou v pouhých pěti
                 letech poté, co uklouzla na bazénové dlažbě a poranila si sedmý
                 krční obratel.
               </p>
-              <p className="">
+              <p>
                 Toto nečekané zranění znemožnilo pohyb jejích dolních končetin a
                 omezilo pohyblivost prstů na rukou, však Katka se odmítla nechat
                 tímto hendikepem ovlivnit.
@@ -152,7 +150,7 @@ const App = () => (
                 dosáhnout vynikajících výsledků a naplnit svůj život radostí a
                 smyslem.
               </p>
-            </div>
+            </article>
           </div>
           <IoIosArrowForward size={60} className="text-white/60" />
         </div>
