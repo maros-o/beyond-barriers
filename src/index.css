@@ -27,13 +27,22 @@ img,
   height: 1.5rem;
   z-index: -1;
   transform: skewX(-15deg);
+  @apply hidden sm:flex;
 }
 
-.soc {
+.social {
   @apply flex justify-center items-center gap-4 drop-shadow-xl;
   filter: drop-shadow(0px 0px 20px rgba(255, 255, 255, 0.272));
 }
 
-.soc-title {
-  @apply font-bold text-xl hover:underline;
+.section-title {
+  @apply text-7xl text-center font-bold tracking-wide pb-10;
+}
+
+.flex-col-cc {
+  @apply flex flex-col items-center justify-center;
+}
+
+.flex-wrap-cc {
+  @apply flex flex-wrap items-center justify-center;
 }
