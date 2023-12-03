@@ -58,7 +58,7 @@ const App = () => (
           <h1 className="section-title">KDO JSME</h1>
           <div className="titlebg w-[193px] left-[-20px]"></div>
         </div>
-        <article className="sm:max-w-[1200px] w-full text-lg bg-mygrey/70 px-8 py-6 tracking-wider">
+        <article className="sm:max-w-[1120px] w-full text-lg bg-mygrey/70 px-8 py-6 tracking-wider">
           Vítejte u <span className="font-bold">Beyond Barriers</span> –
           esportového týmu spojujícího vášeň pro videohry a jedinečné
           jednotlivce s tělesným postižením. Hledáme nové hráče do našeho týmu
@@ -109,7 +109,7 @@ const App = () => (
         <div className="flex items-center justify-center gap-10 mt-4 w-full">
           <IoIosArrowBack size={60} className="text-white/60" />
           <div
-            className="max-w-[860px] flex sm:flex-row flex-col"
+            className="max-w-[1000px] flex sm:flex-row flex-col"
             style={{
               boxShadow: "0px 0px 4px 4px #00000020",
             }}
