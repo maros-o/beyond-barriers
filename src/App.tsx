@@ -6,6 +6,8 @@ import {
   FaYoutube,
 } from "react-icons/fa";
 
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+
 import { Link } from "react-scroll";
 
 const assets_url =
@@ -71,6 +73,9 @@ const App = () => (
       <section
         className="bg-gradient-to-b from-myblack via-black/20 to-myblack"
         id={"MERCH"}
+        style={{
+          marginTop: "10px",
+        }}
       >
         <div className="relative">
           <h1 className="section-title">NÁŠ MERCH</h1>
@@ -84,8 +89,40 @@ const App = () => (
             src={"merchControllerGray2"}
             title={"Xbox Ovladač"}
           />
-          <Merch price={899} src={"merchMouse"} title={"Myš Logitech G5J"} />
+          <Merch price={899} src={"merchMouse"} title={"Myš Logitech"} />
         </ul>
+      </section>
+      <section
+        className="bg-gradient-to-b from-myblack via-black/20 to-myblack"
+        id={"príběhy"}
+      >
+        <div className="relative">
+          <h1 className="section-title">NAŠI LIDÉ</h1>
+          <div className="titlebg w-[212px] left-[-20px]"></div>
+        </div>
+        <div className="flex items-center justify-center gap-10 mt-4 w-full">
+          <IoIosArrowBack size={60} className="text-white/60" />
+          <div className="max-w-[1000px]">
+            <div>
+              <img></img>
+              <div></div>
+            </div>
+            <p>
+              Katka, nesmírně odvážná a inspirativní mladá žena, se stala
+              paraplegičkou v pouhých pěti letech poté, co uklouzla na bazénové
+              dlažbě a poranila si sedmý krční obratel. Toto nečekané zranění
+              znemožnilo pohyb jejích dolních končetin a omezilo pohyblivost
+              prstů na rukou, však Katka se odmítla nechat tímto hendikepem
+              ovlivnit. Navzdory výzvám, kterým čelí, je Katka nejen výjimečným
+              členem našeho týmu, ale také brilantní hráčkou ve hře FIFA. Její
+              odhodlání a síla ducha nezná hranice, a to se projevuje nejen ve
+              Esportu, ale i ve všedním životě. Katka je živým důkazem toho, že
+              i přes životní výzvy můžeme dosáhnout vynikajících výsledků a
+              naplnit svůj život radostí a smyslem.
+            </p>
+          </div>
+          <IoIosArrowForward size={60} className="text-white/60" />
+        </div>
       </section>
       <section
         className="bg-gradient-to-b from-myblack via-black/20 to-myblack"
