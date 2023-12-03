@@ -25,9 +25,10 @@ const App = () => (
         </div>
       </div>
       <nav className="gap-12 items-center justify-center hidden md:flex">
-        <NavLink title="PARTNEŘI" offset={-100} />
-        <NavLink title="KONTAKTY" offset={-50} />
-        <NavLink title="O NÁS" offset={-100} />
+        <NavLink title="o nás" offset={-100} />
+        <NavLink title="príběhy" offset={-100} />
+        <NavLink title="partneři" offset={-100} />
+        <NavLink title="kontakty" offset={-50} />
         <Link
           className="bg-myred/60 flex items-center justify-center py-4 px-5 text-xl tr=ansition-all duration-200 font-semibold hover:text-white select-none"
           spy={true}
@@ -40,39 +41,8 @@ const App = () => (
     </header>
     <main className="flex flex-col flex-grow text-white select-none pointer-events-none">
       <section
-        className="flex-col-cc bg-gradient-to-b from-myblack via-black/20 to-myblack p-20 border-b-2 border-myblack z-[-2]"
-        id={"PARTNEŘI"}
-      >
-        <div className="relative">
-          <h1 className="section-title">PARTNEŘI</h1>
-          <div className="titlebg w-[212px] left-[-20px]"></div>
-        </div>
-        <ul className="flex-wrap-cc gap-10">
-          <Partner src={"rockstar"} />
-          <Partner src={"kaufland"} />
-          <Partner src={"syner"} />
-          <Partner src={"steelseries"} />
-        </ul>
-      </section>
-      <section
-        className="flex-col-cc bg-myblack p-20 py-[150px] z-[-2]"
-        id={"KONTAKTY"}
-      >
-        <div className="relative">
-          <h1 className="section-title">SLEDUJ NÁS</h1>
-          <div className="titlebg w-[185px] left-[300px]"></div>
-        </div>
-        <ul className="flex-wrap-cc gap-20 opacity-90 pt-6 pb-20 z-10">
-          <Social Icon={FaInstagram} title={"@beyond_barriers"} />
-          <Social Icon={FaFacebook} title={"BeyondBarriersCZ"} />
-          <Social Icon={FaTwitter} title={"@BeyondBarriers"} />
-          <Social Icon={FaTwitch} title={"beyond_barriers"} />
-          <Social Icon={FaYoutube} title={"Beyond Barriers"} />
-        </ul>
-      </section>
-      <section
         className="flex-col-cc bg-gradient-to-b bg-myblack border-myblack z-[-2] py-20 pb-[200px]"
-        id={"O NÁS"}
+        id={"o nás"}
       >
         <div className="relative">
           <h1 className="section-title">KDO JSME</h1>
@@ -101,6 +71,37 @@ const App = () => (
           <Merch price={499} src={"teamJersey"} title={"Týmový dres"} />
           <Merch price={899} src={"merchMouse"} title={"Myš Logitech G500"} />
           <Merch price={1799} src={"merchController"} title={"Xbox Ovladač"} />
+        </ul>
+      </section>
+      <section
+        className="flex-col-cc bg-gradient-to-b from-myblack via-black/20 to-myblack p-20 border-b-2 border-myblack z-[-2]"
+        id={"partneři"}
+      >
+        <div className="relative">
+          <h1 className="section-title">PARTNEŘI</h1>
+          <div className="titlebg w-[212px] left-[-20px]"></div>
+        </div>
+        <ul className="flex-wrap-cc gap-10">
+          <Partner src={"rockstar"} />
+          <Partner src={"kaufland"} />
+          <Partner src={"syner"} />
+          <Partner src={"steelseries"} />
+        </ul>
+      </section>
+      <section
+        className="flex-col-cc bg-myblack p-20 py-[150px] z-[-2]"
+        id={"kontakty"}
+      >
+        <div className="relative">
+          <h1 className="section-title">SLEDUJ NÁS</h1>
+          <div className="titlebg w-[185px] left-[300px]"></div>
+        </div>
+        <ul className="flex-wrap-cc gap-20 opacity-90 pt-6 pb-20 z-10">
+          <Social Icon={FaInstagram} title={"@beyond_barriers"} />
+          <Social Icon={FaFacebook} title={"BeyondBarriersCZ"} />
+          <Social Icon={FaTwitter} title={"@BeyondBarriers"} />
+          <Social Icon={FaTwitch} title={"beyond_barriers"} />
+          <Social Icon={FaYoutube} title={"Beyond Barriers"} />
         </ul>
       </section>
     </main>
@@ -140,7 +141,7 @@ const Merch = ({ src, title, price }) => (
 
 const NavLink = ({ title, offset }) => (
   <Link
-    className="text-xl hover:underline transition-all duration-200 font-semibold select-none"
+    className="text-xl hover:underline transition-all duration-200 font-semibold select-none uppercase"
     spy={true}
     smooth={true}
     to={title}
