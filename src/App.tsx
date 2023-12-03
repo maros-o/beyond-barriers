@@ -67,7 +67,7 @@ const App = () => (
           <div className="titlebg w-[296px] left-[165px]"></div>
         </div>
         <ul className="flex-wrap-cc gap-20 mt-4">
-          <Merch price={299} src={"merchMug"} title={"Hrníček"} />
+          <Merch price={299} src={"merchMugGray"} title={"Hrníček"} />
           <Merch price={499} src={"teamJersey"} title={"Týmový dres"} />
           <Merch
             price={1799}
