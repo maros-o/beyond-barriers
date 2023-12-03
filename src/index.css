@@ -13,6 +13,10 @@
   cursor: url("https://raw.githubusercontent.com/maros-o/beyond-barriers/main/public/foot.png")
       30 20,
     pointer;
+
+  *::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 img,
@@ -39,8 +43,9 @@ img,
   @apply text-7xl text-center font-bold tracking-wide pb-10;
 }
 
-.flex-col-cc {
-  @apply flex flex-col items-center justify-center;
+section {
+  @apply flex flex-col items-center justify-center z-[-2] p-20;
+  min-height: calc(100vh - 122px);
 }
 
 .flex-wrap-cc {

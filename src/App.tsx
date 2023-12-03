@@ -13,7 +13,7 @@ const assets_url =
 
 const App = () => (
   <>
-    <header className="flex justify-between items-center md:ps-10 md:pe-20 py-2 bg-myblack border-b-[6px] border-[#242424]/60 sticky top-0">
+    <header className="flex justify-between items-center h-[122px] md:ps-10 md:pe-20 py-2 bg-myblack border-b-[6px] border-[#242424]/60 sticky top-0">
       <div className="flex items-center w-1/2 w-100">
         <img
           src={`${assets_url}/LogoNoTextTransparent.svg`}
@@ -25,15 +25,16 @@ const App = () => (
         </div>
       </div>
       <nav className="gap-12 items-center justify-center hidden md:flex">
-        <NavLink title="o nás" offset={-100} />
-        <NavLink title="príběhy" offset={-100} />
-        <NavLink title="partneři" offset={-100} />
-        <NavLink title="kontakty" offset={-50} />
+        <NavLink title="o nás" offset={-122} />
+        <NavLink title="príběhy" offset={-122} />
+        <NavLink title="partneři" offset={-122} />
+        <NavLink title="kontakty" offset={-122} />
         <Link
           className="bg-myred/60 flex items-center justify-center py-4 px-5 text-xl tr=ansition-all duration-200 font-semibold hover:text-white select-none"
           spy={true}
           smooth={true}
           to={"MERCH"}
+          offset={-122}
         >
           MERCH
         </Link>
@@ -41,25 +42,34 @@ const App = () => (
     </header>
     <main className="flex flex-col flex-grow text-white select-none pointer-events-none">
       <section
-        className="flex-col-cc bg-gradient-to-b bg-myblack border-myblack z-[-2] py-20 pb-[200px]"
+        className="bg-gradient-to-b bg-myblack border-myblack backdrop-filter backdrop-blur"
         id={"o nás"}
+        style={{
+          backgroundImage: `url(${assets_url}/banner.jpg)`,
+          backgroundPosition: "center",
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          justifyContent: "space-between",
+          paddingLeft: 0,
+          paddingRight: 0,
+        }}
       >
         <div className="relative">
           <h1 className="section-title">KDO JSME</h1>
           <div className="titlebg w-[193px] left-[-20px]"></div>
         </div>
-        <p className="sm:max-w-[1200px] w-100 text-lg bg-mygrey/60 px-8 py-6 tracking-wider">
-          Vítejte u Beyond Barriers – esportového týmu, kde vášeň pro videohry
-          spojuje jedinečné jednotlivce s tělesným postižením. Jsme odhodláni
-          překonávat jakékoli fyzické překážky a dokazovat, že ve světě esportu
-          neexistují hranice. Společně formujeme komunitu, která inspiruje k
-          posouvání vlastních limitů a ukazuje, že vášeň a spolupráce jsou
-          klíčové pro úspěch, ať už jsme kdekoli na světě. Jsme Beyond Barriers
-          – tým, který nezná omezení a věří, že esport je pro každého.
+        <p className="sm:max-w-[1200px] w-full text-lg bg-mygrey/70 px-8 py-6 tracking-wider mb-[90px]">
+          Vítejte u Beyond Barriers – esportového týmu spojujícího vášeň pro
+          videohry a jedinečné jednotlivce s tělesným postižením. Hledáme nové
+          hráče do našeho týmu pro hry jako FIFA, CS:GO, League of Legends a
+          PUBG. Nezáleží na úrovni zkušeností – věříme, že esport je pro
+          každého. Připojte se k nám a buďte součástí komunity, která dokazuje,
+          že vášeň a spolupráce jsou klíčové pro úspěch ve světě esportu. Beyond
+          Barriers - společně překračujeme hranice!
         </p>
       </section>
       <section
-        className="flex-col-cc bg-gradient-to-b from-myblack via-black/20 to-myblack p-20 border-b-2 border-myblack z-[-2] pb-[200px]"
+        className="bg-gradient-to-b from-myblack via-black/20 to-myblack"
         id={"MERCH"}
       >
         <div className="relative">
@@ -74,11 +84,11 @@ const App = () => (
             src={"merchControllerGray2"}
             title={"Xbox Ovladač"}
           />
-          <Merch price={899} src={"merchMouse"} title={"Myš Logitech G500"} />
+          <Merch price={899} src={"merchMouse"} title={"Myš Logitech G5J"} />
         </ul>
       </section>
       <section
-        className="flex-col-cc bg-gradient-to-b from-myblack via-black/20 to-myblack p-20 border-b-2 border-myblack z-[-2]"
+        className="bg-gradient-to-b from-myblack via-black/20 to-myblack"
         id={"partneři"}
       >
         <div className="relative">
@@ -92,15 +102,12 @@ const App = () => (
           <Partner src={"steelseries"} />
         </ul>
       </section>
-      <section
-        className="flex-col-cc bg-myblack p-20 py-[150px] z-[-2]"
-        id={"kontakty"}
-      >
+      <section className="bg-myblack" id={"kontakty"}>
         <div className="relative">
           <h1 className="section-title">SLEDUJ NÁS</h1>
           <div className="titlebg w-[185px] left-[300px]"></div>
         </div>
-        <ul className="flex-wrap-cc gap-20 opacity-90 pt-6 pb-20 z-10">
+        <ul className="flex-wrap-cc gap-20 opacity-90 pt-6">
           <Social Icon={FaInstagram} title={"@beyond_barriers"} />
           <Social Icon={FaFacebook} title={"BeyondBarriersCZ"} />
           <Social Icon={FaTwitter} title={"@BeyondBarriers"} />
