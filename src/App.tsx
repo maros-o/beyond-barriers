@@ -28,7 +28,7 @@ const App = () => (
       </div>
       <nav className="gap-12 items-center justify-center hidden md:flex">
         <NavLink title="o nás" offset={-122} />
-        <NavLink title="príběhy" offset={-122} />
+        <NavLink title="hráči" offset={-122} />
         <NavLink title="partneři" offset={-122} />
         <NavLink title="kontakty" offset={-122} />
         <Link
@@ -61,13 +61,18 @@ const App = () => (
           <div className="titlebg w-[193px] left-[-20px]"></div>
         </div>
         <p className="sm:max-w-[1200px] w-full text-lg bg-mygrey/70 px-8 py-6 tracking-wider mb-[90px]">
-          Vítejte u Beyond Barriers – esportového týmu spojujícího vášeň pro
-          videohry a jedinečné jednotlivce s tělesným postižením. Hledáme nové
-          hráče do našeho týmu pro hry jako FIFA, CS:GO, League of Legends a
-          PUBG. Nezáleží na úrovni zkušeností – věříme, že esport je pro
-          každého. Připojte se k nám a buďte součástí komunity, která dokazuje,
-          že vášeň a spolupráce jsou klíčové pro úspěch ve světě esportu. Beyond
-          Barriers - společně překračujeme hranice!
+          Vítejte u <span className="font-bold">Beyond Barriers</span> –
+          esportového týmu spojujícího vášeň pro videohry a jedinečné
+          jednotlivce s tělesným postižením. Hledáme nové hráče do našeho týmu
+          pro hry jako <span className="font-semibold">FIFA</span>,{" "}
+          <span className="font-semibold">CSGO</span>,
+          <span className="font-semibold"> League of Legends</span> a{" "}
+          <span className="font-semibold">PUBG</span>. Nezáleží na úrovni
+          zkušeností – věříme, že esport je pro každého. Připojte se k nám a
+          buďte součástí komunity, která dokazuje, že vášeň a spolupráce jsou
+          klíčové pro úspěch ve světě esportu.{" "}
+          <span className="font-bold">Beyond Barriers</span> - společně
+          překračujeme hranice!
         </p>
       </section>
       <section
@@ -94,32 +99,57 @@ const App = () => (
       </section>
       <section
         className="bg-gradient-to-b from-myblack via-black/20 to-myblack"
-        id={"príběhy"}
+        id={"hráči"}
       >
         <div className="relative">
-          <h1 className="section-title">NAŠI LIDÉ</h1>
+          <h1 className="section-title">NAŠI HRÁČI</h1>
           <div className="titlebg w-[212px] left-[-20px]"></div>
         </div>
         <div className="flex items-center justify-center gap-10 mt-4 w-full">
           <IoIosArrowBack size={60} className="text-white/60" />
-          <div className="max-w-[1000px]">
-            <div>
-              <img></img>
-              <div></div>
+          <div
+            className="max-w-[1000px] flex"
+            style={{
+              boxShadow: "0px 0px 4px 4px #00000020",
+            }}
+          >
+            <div className="flex flex-col bg-black/20 p-5">
+              <img
+                src={`${assets_url}/katka.jpg`}
+                alt="logo"
+                className="max-w-[380px] w-100 opacity-90 object-cover border-[6px] border-myred/60"
+              />
+              <div className="text-xl text-center tracking-wider mt-4">
+                Kateřina <span className="font-bold">"Katniss"</span> Novotná
+              </div>
             </div>
-            <p>
-              Katka, nesmírně odvážná a inspirativní mladá žena, se stala
-              paraplegičkou v pouhých pěti letech poté, co uklouzla na bazénové
-              dlažbě a poranila si sedmý krční obratel. Toto nečekané zranění
-              znemožnilo pohyb jejích dolních končetin a omezilo pohyblivost
-              prstů na rukou, však Katka se odmítla nechat tímto hendikepem
-              ovlivnit. Navzdory výzvám, kterým čelí, je Katka nejen výjimečným
-              členem našeho týmu, ale také brilantní hráčkou ve hře FIFA. Její
-              odhodlání a síla ducha nezná hranice, a to se projevuje nejen ve
-              Esportu, ale i ve všedním životě. Katka je živým důkazem toho, že
-              i přes životní výzvy můžeme dosáhnout vynikajících výsledků a
-              naplnit svůj život radostí a smyslem.
-            </p>
+            <div className="px-8 py-6 tracking-wider bg-mygrey/80 flex flex-col gap-5">
+              <p className="">
+                <span className="font-bold">Katka</span>, nesmírně odvážná a
+                inspirativní mladá žena, se stala paraplegičkou v pouhých pěti
+                letech poté, co uklouzla na bazénové dlažbě a poranila si sedmý
+                krční obratel.
+              </p>
+              <p className="">
+                Toto nečekané zranění znemožnilo pohyb jejích dolních končetin a
+                omezilo pohyblivost prstů na rukou, však Katka se odmítla nechat
+                tímto hendikepem ovlivnit.
+              </p>
+              <p>
+                Navzdory výzvám, kterým čelí, je Katka nejen výjimečným členem
+                našeho týmu, ale také brilantní hráčkou ve hře{" "}
+                <span className="font-bold">FIFA</span>.
+              </p>
+              <p>
+                Její odhodlání a síla ducha nezná hranice, a to se projevuje
+                nejen ve Esportu, ale i ve všedním životě.
+              </p>
+              <p>
+                Katka je živým důkazem toho, že i přes životní výzvy můžeme
+                dosáhnout vynikajících výsledků a naplnit svůj život radostí a
+                smyslem.
+              </p>
+            </div>
           </div>
           <IoIosArrowForward size={60} className="text-white/60" />
         </div>
