@@ -58,7 +58,7 @@ const App = () => (
           <h1 className="section-title">KDO JSME</h1>
           <div className="titlebg w-[193px] left-[-20px]"></div>
         </div>
-        <article className="sm:max-w-[1020px] w-full text-lg bg-mygrey/70 px-8 py-6 tracking-wider">
+        <article className="sm:max-w-[1060px] w-full text-lg bg-mygrey/70 px-8 py-6 tracking-wider">
           Vítejte u <span className="font-bold">Beyond Barriers</span> –
           esportového týmu spojujícího vášeň pro videohry a jedinečné
           jednotlivce s tělesným postižením. Hledáme nové hráče do našeho týmu
