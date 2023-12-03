@@ -96,6 +96,9 @@ const App = () => (
           />
           <Merch price={899} src={"merchMouse"} title={"Myš Logitech"} />
         </ul>
+        <div className="mt-[60px] bg-myred/60 flex items-center justify-center py-4 px-5 text-xl tr=ansition-all duration-200 font-semibold hover:text-white select-none">
+          PŘEJÍT DO ESHOPU
+        </div>
       </section>
       <section
         className="bg-gradient-to-b from-myblack via-black/20 to-myblack"
