@@ -69,8 +69,12 @@ const App = () => (
         <ul className="flex-wrap-cc gap-20 mt-4">
           <Merch price={299} src={"merchMug"} title={"Hrníček"} />
           <Merch price={499} src={"teamJersey"} title={"Týmový dres"} />
+          <Merch
+            price={1799}
+            src={"merchControllerGray"}
+            title={"Xbox Ovladač"}
+          />
           <Merch price={899} src={"merchMouse"} title={"Myš Logitech G500"} />
-          <Merch price={1799} src={"merchController"} title={"Xbox Ovladač"} />
         </ul>
       </section>
       <section
