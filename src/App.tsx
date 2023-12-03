@@ -45,7 +45,7 @@ const App = () => (
         className="bg-gradient-to-b bg-myblack border-myblack backdrop-filter backdrop-blur"
         id={"o nás"}
         style={{
-          backgroundImage: `url(${assets_url}/banner.jpg)`,
+          backgroundImage: `url(${assets_url}/bannerVig.jpg)`,
           backgroundPosition: "center",
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
