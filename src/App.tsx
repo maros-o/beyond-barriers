@@ -71,7 +71,7 @@ const App = () => (
           <Merch price={499} src={"teamJersey"} title={"Týmový dres"} />
           <Merch
             price={1799}
-            src={"merchControllerGray"}
+            src={"merchControllerGray1"}
             title={"Xbox Ovladač"}
           />
           <Merch price={899} src={"merchMouse"} title={"Myš Logitech G500"} />
