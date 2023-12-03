@@ -108,7 +108,7 @@ const App = () => (
         <div className="flex items-center justify-center gap-10 mt-4 w-full">
           <IoIosArrowBack size={60} className="text-white/60" />
           <div
-            className="max-w-[1000px] flex"
+            className="max-w-[1000px] flex sm:flex-row flex-col"
             style={{
               boxShadow: "0px 0px 4px 4px #00000020",
             }}
